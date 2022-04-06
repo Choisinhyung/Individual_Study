@@ -1,15 +1,17 @@
 import java.util.Scanner;
 
 public class asf {
+	
+	public static void main(String[] args) {
 
-		public void count() {
+//		public void count() {
 			Scanner sc = new Scanner(System.in);
 			
 			
 			while(true) { // ~하는동안
 				System.out.println("문자열을 입력해주세요 : ");
 				String str = sc.nextLine();
-				if(str == "exit") {
+				if(str.equals("exit")) {
 					break;
 				} else {
 					System.out.println(str.length() + "글자입니다.");
@@ -20,6 +22,7 @@ public class asf {
 			System.out.println("프로그램을 종료합니다");
 	
 
-	}
+		}
 
-}
+	}
+// }
