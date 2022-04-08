@@ -32,7 +32,9 @@ public class Main {
 		System.out.println(Arrays.toString(arg)); // 얕은 복사가 아닌 Arrays.toString을 이용해서 깊은 복사 출력!
 		
 		Random rand = new Random(); // 랜덤객체 생성 후 참조변수인 rand에 대입
-		m.method06(rand); // 06메서드를 호출하고 매개변수는 r = rand
+		int[] df = m.method06(rand); // 06메서드를 호출하고 매개변수 r = rand
+		System.out.println(Arrays.toString(df));
+		System.out.println("-------------");
 		
 		m.method07(4,8,6);
 		

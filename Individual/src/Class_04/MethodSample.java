@@ -37,14 +37,15 @@ public class MethodSample {
 		return arr; //위의 값을 반환한다. 반환값 int[]
 	}
 	
-	public void method06(Random r) {
+	public int[] method06(Random r) {
 		System.out.println("반환타입은 void이고 매개변수가 클래스(객체)인 메서드");
-		r.nextInt(10); // 매개변수 r을 사용하여 랜덤값 생성 ~10 - 전달받은 객체를 사용해서 작업
+		int x = r.nextInt(10); // 매개변수 r을 사용하여 랜덤값 생성 ~10 - 전달받은 객체를 사용해서 작업
+		int x1 = r.nextInt(20); // 반환값은 오직 한 개만 가능
+		return new int[] {x,x1};
 	}
 	
 	public void method07(int ... nums) {
 		System.out.println("반환타입은 void이고 매개변수가 가변인자인 메서드");
-		System.out.println(nums);
 		for(int i = 0; i < nums.length; i++) {
 			System.out.println("nums[" + i + "] -> " + nums[i]);
 		}
