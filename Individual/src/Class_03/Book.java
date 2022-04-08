@@ -38,9 +38,17 @@ public class Book {
 		this.rentPrice = rentPrice;
 	}
 	
+	public void method1() {
+		System.out.println("메서드1 실행됨");
+	}
+	
+	public static void method2() {
+		System.out.println("메서드2 실행됨");
+	}
+	
+	public static final void method3() {
+		System.out.println("메서드3 실행됨");
+	}
 	
 	
-	
-	
-
 }
