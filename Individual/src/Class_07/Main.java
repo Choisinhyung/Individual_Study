@@ -12,8 +12,13 @@ public class Main {
 			System.out.println(p.getPageNumber() + "번째 페이지");			
 		}
 		
+//		for(int i = 0; i < 10; i++) {
+//			p.prevPage();
+//			System.out.println(p.getPageNumber() + "번째 페이지");			
+//		}
+		
 		for(int i = 0; i < 10; i++) {
-			p.prevPage();
+			p.prevPage(2);
 			System.out.println(p.getPageNumber() + "번째 페이지");			
 		}
 
