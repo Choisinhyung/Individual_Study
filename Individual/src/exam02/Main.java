@@ -18,6 +18,11 @@ public class Main {
 		
 		r.setGrades("수학", 90.5);
 		System.out.println(Arrays.toString(r.getGrades()));
+		
+		System.out.println(r.getGrade("사회"));
+		
+		r.addSubject("체육", 85.3);
+		System.out.println(r.getGrade("체육"));
 
 	}
 
