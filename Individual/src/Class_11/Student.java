@@ -16,6 +16,12 @@ public class Student extends Person {
 	public void setClassRoom(int classRoom) {
 		this.classRoom = classRoom;
 	}
+	
+	@Override
+	public String toString() {
+		return getName() + "|" + getAge() + "|" + getGender()
+		+ "|학년:" + getClassLevel() + "|반:" + getClassRoom();
+	}
 
 	
 }

@@ -24,6 +24,13 @@ public class Teacher extends Person {
 		this.subject = subject;
 	}
 	
+	@Override
+	public String toString() {
+		return getName() + "|" + getAge() + "|" + getGender()
+		+ "|학년:" + getClassLevel() + "|반:" + getClassRoom()
+		+ "|담당 과목:" + getSubject();
+	}
+	
 	
 }
 
