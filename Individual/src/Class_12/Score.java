@@ -1,7 +1,6 @@
 package Class_12;
 
 import java.util.Objects;
-import java.util.Random;
 
 public class Score {
 	//점수만 가지는 객체
