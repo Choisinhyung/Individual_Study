@@ -32,7 +32,7 @@ public class Customer {
 		this.gender = gender;
 	}
 	public void buy(String productName, int price) {
-		System.out.printf("%s 상품을 %d원에 구입하였습니다. ", productName, price);
+		System.out.printf("%s 상품을 %d원에 구입하였습니다.\n ", productName, price);
 	}
 	
 	@Override
