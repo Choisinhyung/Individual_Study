@@ -39,7 +39,7 @@ public class Main {
 		System.out.println("반 : " + s3.getClassRoom());
 		System.out.println("--------------------");
 		
-		Person t2 = new Teacher("김철수", 19);
+		Person t2 = new Teacher("김철수", 19); //위와 동일
 		Teacher t3 = (Teacher) t2;
 		t3.setClassLevel(2);
 		t3.setClassRoom(3);
@@ -57,7 +57,7 @@ public class Main {
 		
 		for(int i = 0; i < p2.length; i++) {
 			int level, room;
-			String subject = "";
+			String subject;
 			if(p2[i] instanceof Student) { //스튜던트 객체의 인스턴스냐
 				level = ((Student) p2[i]).getClassLevel(); //다시 다운캐스팅
 				room = ((Student) p2[i]).getClassRoom();
