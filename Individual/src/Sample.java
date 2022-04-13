@@ -46,13 +46,6 @@ public class Sample {
 		s1 = String.join("/", sArr); //String.join(무엇을 기준으로 합칠건지~), 배열이름
 		System.out.println(s1);
 		
-		// 전화번호를 입력받아서 출력할 떄 전화번호의 뒷자리 4자리는 ****로 마스킹하시오.
-		
-		
-//		Scanner sc = new Scanner(System.in);
-//		String num = sc.nextLine();
-		
-		//
 		s1 = "		앞/뒤로 공백이 포함된 문자열 		";
 		s1 = s1.trim(); //양 끝 불필요한 공백 제거기능
 		System.out.println(s1);
