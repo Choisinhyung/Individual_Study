@@ -24,6 +24,13 @@ public class Sample {
 		String[] numArr = num.split(" ");
 //		System.out.println(Arrays.toString(numArr));
 		
+		//문자열 입력 받은 것을 정수로 변환하고 기본자료형타입에 저장하는 형식으로 wrapper사용
+		int[] iArr = new int[numArr.length];
+		for(int i = 0; i < numArr.length; i++) {
+			iArr[i] = Integer.parseInt(numArr[i]);
+		}
+	System.out.println(Arrays.toString(iArr));
+		
 		System.out.println("다음의 값을 입력하였습니다. ");
 		System.out.println(String.join(", ", numArr));
 	}
@@ -87,10 +94,10 @@ public class Sample {
 
 	public static void main(String[] args) {
 		Sample sample = new Sample();
-//		sample.ex01();
+		sample.ex01();
 //		sample.ex02();
 //		sample.ex03();
-		sample.ex04();
+//		sample.ex04();
 
 		
 		
