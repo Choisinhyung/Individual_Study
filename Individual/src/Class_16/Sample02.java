@@ -1,5 +1,7 @@
 package Class_16;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -69,6 +71,46 @@ public class Sample02 {
 		System.out.println(c2.get(Calendar.HOUR));
 		System.out.println(c2.get(Calendar.MINUTE));
 		System.out.println(c2.get(Calendar.SECOND));
+		
+		/*
+		 * SimpleDateFormat 클래스
+		 * 	- 날짜 포멧 형식을 자유롭게 만들기 위해 사용하는 클래스
+		 */
+		
+		SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd");
+		String now = s1.format(new Date());
+		System.out.println(now);
+		
+		s1.applyPattern("yyyy년 MM월 dd일 E요일 a hh시 mm분 ss초 .SSS");
+		now = s1.format(new Date());
+		System.out.println(now);
+		
+		s1.applyPattern("yyyy년 MM월 dd일");
+		try {
+			Date d2 = s1.parse("2022년 10월 10일"); //문자열을 날싸로 변환
+			System.out.println(d2);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
