@@ -33,6 +33,12 @@ public class Sample {
 		
 		System.out.println("다음의 값을 입력하였습니다. ");
 		System.out.println(String.join(", ", numArr));
+		
+//		int[] arr = new int [numArr.length]; //정수로 변환해서 배열에 저장
+//		for(int i = 0; i < numArr.length; i++) { //10 20 30 40 50 / 5번 반복 0~4
+//			arr[i] = Integer.parseInt(numArr[i]);
+//		}
+		
 	}
 	
 	public void ex02() {
